@@ -22,30 +22,30 @@ using System.Runtime.Serialization;
 
 namespace Quartz
 {
-	/// <summary>
-	/// An exception that is thrown to indicate that there is a misconfiguration of
-	/// the <see cref="ISchedulerFactory" />- or one of the components it
-	/// configures.
-	/// </summary>
-	/// <author>James House</author>
+    /// <summary>
+    /// An exception that is thrown to indicate that there is a misconfiguration of
+    /// the <see cref="ISchedulerFactory" />- or one of the components it
+    /// configures.
+    /// </summary>
+    /// <author>James House</author>
     /// <author>Marko Lahma (.NET)</author>
     [Serializable]
     public class SchedulerConfigException : SchedulerException
-	{
-		/// <summary>
-		/// Create a <see cref="JobPersistenceException" /> with the given message.
-		/// </summary>
-		public SchedulerConfigException(string msg) : base(msg)
-		{
-		}
+    {
+        /// <summary>
+        /// Create a <see cref="JobPersistenceException" /> with the given message.
+        /// </summary>
+        public SchedulerConfigException(string msg) : base(msg)
+        {
+        }
 
-		/// <summary>
-		/// Create a <see cref="JobPersistenceException" /> with the given message
-		/// and cause.
-		/// </summary>
-		public SchedulerConfigException(string msg, Exception cause) : base(msg, cause)
-		{
-		}
+        /// <summary>
+        /// Create a <see cref="JobPersistenceException" /> with the given message
+        /// and cause.
+        /// </summary>
+        public SchedulerConfigException(string msg, Exception cause) : base(msg, cause)
+        {
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="SchedulerConfigException"/> class.
